@@ -1,0 +1,229 @@
+/* Common CSS */
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.error {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    /* border:1px solid red; */
+}
+.active{
+    color: #ffffff !important;
+    background-color: #343A40;
+}
+
+a {
+    color: #ffffff ;
+}
+
+a:hover {
+    color: grey ;
+    cursor: pointer;
+}
+
+/*  Nav bar Styling */
+.nav-item a,
+.nav-item span {
+    padding: 0px 20px 0px 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.nav-item a:hover {
+    padding: 0px 20px 0px 20px;
+    color: blue;
+    cursor: pointer;
+}
+.nav-item {
+    padding: 8px 0px 8px 0px;
+}
+
+/*  Login and Signup Styling */
+
+.logincont {
+    border: 2px solid grey;
+    width: 50%;
+    min-height: 300px;
+    padding-bottom: 3%;
+    background-color: #1A3E58;
+    border-radius: 2%;
+}
+
+.logincont h2,
+.logincont label {
+    color: #ffffff;
+}
+
+.new-user {
+    color: #ffffff;
+}
+
+.new-user span {
+    cursor: pointer;
+}
+
+.new-user span:hover {
+    cursor: pointer;
+    color: grey;
+}
+
+.logincont button {
+    padding: 7px 50px 7px 50px;
+    margin-top: 10px;
+}
+
+
+/* SideBar  */
+
+.sidebar {
+    max-height: 100vh;
+    height: 800px;
+    padding: 0%;
+    background-color: #1A3E58;
+    text-align: left;
+}
+
+.sidebar ul li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 18px;
+    padding: 15px 4% 15px 11%;
+}
+
+.sidebar ul li:hover {
+    text-decoration: none;
+    list-style: none;
+    font-size: 18px;
+    padding: 15px 4% 15px 11%;
+    cursor: pointer;
+}
+
+.sidebarcomp {
+    padding: 0px;
+}
+.sidebar h4{
+    padding: 10px;
+    color: #ccc;
+}
+
+
+/* Theme Toggler  */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 22px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 17px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+  /* Dashboard Styling */
+.dashboard .topbar{
+    padding: 20px 50px 10px 50px;
+    background-color: lightgray;
+    border-right: 1px solid grey
+}
+.topbar p{
+    font-size: 16px;
+}
+.topbar h3{
+    text-shadow: 0px -2px darkgreen;
+}   
+.topbar p span{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.progressBar{
+    width: 100%;
+    overflow-x: hidden;
+}
+.progressBar .title{
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 0px -1px darkgreen; 
+    padding-top: 2%;
+}
+
+.recent-activities , .latest-updates{
+    max-height: 300px;
+    height: 300px;
+    width: 105%;
+    background-color:whitesmoke;
+    overflow-y: scroll;
+    padding-right: 20px;
+}
+.activities p{
+    max-width: 100%;
+    color: white;
+    background-color: #343A40;
+    padding: 6px 5px 6px 13px;
+}
+
+/* View Users */
+.userstable tr td, .userstable tr th{
+    color: wheat;
+}
+.userstable tr .actionbtn:hover{
+    cursor: pointer;
+    color: coral;
+    font-weight: bold;
+
+}
+.userstable tr .actionbtn button{
+    padding: 0px 15px 0px 15px;
+}
