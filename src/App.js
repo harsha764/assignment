@@ -13,7 +13,6 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Switch>
-            <Fragment>
               <div className="container-fluid">
                 <div className="row">
                   <div className="col-12">
@@ -24,7 +23,6 @@ function App() {
                   </div>
                 </div>
               </div>
-            </Fragment>
         </Switch>
       </BrowserRouter>
     </div>
